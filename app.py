@@ -80,8 +80,8 @@ if st.button("Click me"):
     st.write("Button Clicked")
 
 #Slider: to select a value from a range of values
-age = st.slider("Select Your Age", 0, 100, 0)
-st.write(f"Youa selected  {age}")
+# age = st.slider("Select Your Age", 0, 100, 0)
+# st.write(f"Youa selected  {age}")
 
 #Layout components: to organize the layout of the app
 
@@ -120,3 +120,17 @@ st.line_chart(data.set_index('x'))
 
 #Bar chart
 st.bar_chart(data.set_index('x'))
+
+
+#error and success messages: to display error and success messages use .error and .success
+st.write("Check your eligibility to vote")
+age = st.slider("Select Your Age", 0, 100, 0)
+check_eligibility = st.button("Check Eligibility")
+if not check_eligibility:
+    st.write("Please click the button to check your eligibility")
+else:
+    if age < 18:
+        st.error("You are not eligible to vote")
+    else:
+        st.success("You are eligible to vote")
+
