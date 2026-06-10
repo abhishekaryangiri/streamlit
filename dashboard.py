@@ -1,0 +1,16 @@
+import streamlit as st
+#dashboard:web app to display data and user input
+st.title("NSAP Dashboard")
+st.write("Welcome to the NSAP Dashboard. Here you can find information about the National Social Assistance Programme (NSAP) and its various schemes.")
+st.header("NSAP Schemes")
+st.subheader("1. Old Age Pension")
+st.text("The Old Age Pension scheme provides financial assistance to elderly individuals who are 60 years or above. The central government provides a pension of ₹200 per month, and additional pension may be provided by the state government.")
+st.subheader("2. Widow Pension")
+st.text("The Widow Pension scheme provides financial assistance to widows who are 40 to 79 years old. The central government provides a pension of ₹300 per month, and additional pension may be provided by the state government.")
+st.subheader("3. Disability Pension")
+st.text("The Disability Pension scheme provides financial assistance to individuals with 80% or more disability. The central government provides a pension of ₹300 per month, and additional pension may be provided by the state government.")
+st.header("Pension Amounts")
+st.text("Old Age Pension: ₹200 per month")
+st.text("Widow Pension: ₹300 per month")
+st.text("Disability Pension: ₹300 per month")
+st.text("Note: States top up funds for additional pension.")
