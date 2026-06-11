@@ -591,3 +591,6 @@ Creates ChatGPT-like input.
 Q10. What are the biggest advantages of Streamlit?
 
 Fast development, Python-only coding, ML/GenAI integration.
+
+## All .py copy into Readme.md
+for %f in (*.py) do type "%f" >> README.md
