@@ -3,7 +3,7 @@ import streamlit as st
 #Price Calculator for discount
 st.title("Discount Price Calculator")
 original_price = st.text_input("Enter the original price:")
-discount_percentage = st.text_input("Enter the discount percentage:")
+discount_percentage = st.slider("Select the discount percentage:", 0, 50, 10)  # Slider for discount percentage from 0% to 100% with a default of 10%
 discounted_price = st.button("Calculate Discounted Price")
 if discounted_price:
     original_price = float(original_price)
